@@ -97,7 +97,7 @@ const productDetails = [
 
 function App() {
   return (
-    <BrowserRouter basename="rgp-73-store">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Wrapper />}>
           <Route index element={<Home items = {productDetails} />} />
