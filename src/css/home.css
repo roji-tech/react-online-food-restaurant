@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.value,
+.testimonials {
+  padding: 3rem 5rem;
+}
+.value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.value div:nth-child(1) {
+  max-width: 500px;
+}
+.value div:nth-child(2) {
+  max-width: 400px;
+}
+.value div img {
+  width: 100%;
+}
+
+.value .value-text {
+  color: var(--color-4);
+  padding-right: 10px;
+}
+.testimonies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.testimony {
+  background-color: var(--color-1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 160px;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid var(--color-4);
+}
+.testimony p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.testimony .author {
+  text-align: center;
+}
+
+#back_to_top {
+  padding: 15px;
+  border-radius: 20px;
+  width: max-content;
+  height: max-content;
+  letter-spacing: 0.5rem;
+  color: var(--header-color);
+  background-color: var(--color-2);
+}
+
+@media screen and (max-width: 480px) {
+  .value,
+  .testimonials {
+    padding: 1.5rem 1.2rem;
+  }
+}

@@ -1,0 +1,34 @@
+Testimonies {
+	fullname,
+	text
+	}
+	
+	
+Products {
+	meal-name,
+	meal-price,
+	meal-desc,	
+	}
+
+
+Order {}
+
+
+Cart  {}
+
+
+Subscribe {
+	email	
+	}
+
+
+Message {
+	email,
+	message
+	}
+	
+	
+Reviews {
+	product,
+	text
+	}

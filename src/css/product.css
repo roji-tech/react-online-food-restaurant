@@ -1,0 +1,137 @@
+/* ===========
+    backToProducts 
+    item
+    item-img-div 
+    item-img
+    item-detail
+    item-name 
+    item-desc
+    item-order
+============== */
+
+.shadow {
+  box-shadow: 0px 0px 20px 2px rgba(3, 3, 3, 0.5);
+}
+
+.item-div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-div * {
+  box-sizing: border-box;
+}
+
+.item {
+  padding: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  box-shadow: 1.1em;
+  position: relative;
+  background-color: var(--color-1);
+  width: 94%;
+}
+
+.item-img-div {
+  padding: 5px;
+  box-shadow: 0px, 0px, 20px, 10px rgba(3, 3, 3, 0.4);
+}
+
+.item-img {
+  width: 40vw;
+}
+
+/* =========================
+   item-detail
+   ========================= */
+
+.item-detail {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.item-price {
+  font-weight: 1000;
+  font-size: 1.5em;
+  margin: 15px;
+  font-style: italic;
+}
+
+/* =========================
+   ORDER
+   ========================= */
+
+.item-order {
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 30px, 20px, 30px, 0 rgba(3, 3, 3, 0.4);
+}
+
+/* =========================
+   MEDIA QUERIES 1200px
+   ========================= */
+
+@media screen and (max-width: 1200px) {
+  .item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-img {
+    width: 70vw;
+  }
+}
+
+/* =========================
+   MEDIA QUERIES 500px
+   ========================= */
+
+@media screen and (max-width: 650px) {
+  .item-detail {
+    width: 90%;
+  }
+  .item-order {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===============
+   item-detail
+   ================= */
+
+  .item-detail {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .item-price {
+    margin: 10px;
+  }
+}
+
+/* =========================
+   MEDIA QUERIES 350px
+   ========================= */
+
+@media screen and (max-width: 350px) {
+  .item-order {
+    display: flex;
+    flex-direction: column;
+  }
+}

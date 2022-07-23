@@ -1,0 +1,36 @@
+/* =========================
+      3D TEXT
+    ========================= */
+
+.threeDee {
+  font-size: 3.5em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #00ccff;
+  -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+  transform: skew(-15deg, -5deg) rotate(5deg);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  text-shadow: 1px 1px #094d5e, 2px 2px #056a83, 3px 3px #094d5e,
+    4px 4px #056a83, 5px 5px #094d5e, 6px 6px #0e7b9c, 7px 7px #0e7b9c,
+    8px 8px #0e7b9c, 9px 9px 14px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+   MEDIA QUERIES 1000px
+   ========================= */
+
+@media screen and (max-width: 1000px) {
+  .threeDee {
+    font-size: 2em;
+  }
+}
+/* =========================
+   MEDIA QUERIES 350px
+   ========================= */
+
+   @media screen and (max-width: 350px) {
+    .threeDee {
+      font-size: 1.1em;
+    }
+   }

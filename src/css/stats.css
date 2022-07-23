@@ -1,0 +1,60 @@
+.stats-section {
+  display: flex;
+  gap: 3.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 6rem;
+}
+.stats-section div {
+  position: relative;
+  padding: 0 1rem;
+}
+.stats-section div::after {
+  content: "";
+  position: absolute;
+  /* width: 5px;
+  height: 20px;
+  background-color: var(--color-2);
+  border-radius: 10px;
+  top: 0;
+  right: 0; */
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-3);
+  border-radius: 50%;
+  top: 15px;
+  left: 5px;
+}
+.stats-section .stats-figure {
+  color: var(--color-3);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+.stats-section .stats-text {
+  color: var(--color-4);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .stats-section {
+    gap: 1rem;
+    padding: 1.3rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .stats-section .stats-figure {
+    font-size: 1.4rem;
+  }
+  .stats-section .stats-text {
+    font-size: 1rem;
+  }
+  .stats-section div {
+    padding: 0 0.8rem;
+  }
+  .stats-section div::after {
+    width: 3px;
+    height: 20px;
+  }
+}

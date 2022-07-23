@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+body,
+input,
+textarea,
+button {
+  /* margin: 0; */
+  color: var(--color-3);
+  font-family: "Nunito", sans-serif;
+
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --body-color: rgb(228, 228, 228);
+  --header-color: rgb(5, 255, 255);
+  --nav-bg-color: rgb(7, 32, 32);
+  --color-1: rgb(255, 255, 255);
+  --color-2: rgb(0, 115, 255);
+  --color-3: #222;
+  --color-4: #777;
+  --footer: rgb(209, 209, 209);
+  --gray-bg: rgb(193, 193, 194);
+}
+body {
+  min-height: 100vh;
+}
+a,
+a:focus {
+  text-decoration: none;
+  color: var(--color-4);
+}
+
+/* a:hover {
+  font-weight: 1000;
+} */
+
+.custom-title {
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-3);
+  position: relative;
+  margin-bottom: 40px;
+}
+.custom-title span {
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  border-radius: 2px;
+  left: 0;
+  bottom: -10px;
+  transform: translate();
+  background-color: var(--color-2);
+}
+#tasty {
+  font-family: "Satisfy", cursive;
+  font-size: 2.3rem;
+  color: var(--color-2);
+}
+.custom-btn {
+  padding: 10px 40px;
+  margin-top: 2rem;
+  font-weight: bold;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+.row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.col-2 {
+  padding: 20px;
+  width: 30rem;
+}
+
+@media screen and (max-width: 480px) {
+  .custom-title {
+    font-size: 1.6rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .col-2 {
+    flex-basis: 100%;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/* =========================
+      CUSTOM 3D TITLE
+    ========================= */
+
+.custom-3D-title {
+  font-size: 4em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f2395a;
+  -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+  transform: skew(-5deg, -5deg) rotate(5deg);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  text-shadow: 1px 1px #2ea9be, 2px 2px #2ea9be, 7px 7px #2ea9be,
+    5px 5px #2ea9be, 4px 4px #195eb3, 6px 6px #195eb3, 3px 3px #195eb3,
+    8px 8px #195eb3, 9px 9px #195eb3, 10px 10px #195eb3,
+    11px 11px 15px rgba(0, 0, 0, 0.2);
+}

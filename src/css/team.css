@@ -1,0 +1,41 @@
+.members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.member {
+  width: 200px;
+}
+.member .img-background {
+  background-color: bisque;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.member .img-background img {
+  width: 40%;
+}
+.member .member-name {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--color-3);
+  text-transform: capitalize;
+}
+.member .member-title {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 580px) {
+  .members {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .member {
+    width: 280px;
+  }
+}

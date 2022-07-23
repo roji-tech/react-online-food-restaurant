@@ -1,0 +1,61 @@
+/* =========================
+   ANIMATED BUTTONS
+   ========================= */
+
+.animated-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  background-color: #0ba8a8;
+  background-size: 20px 20px;
+  border: 1px solid #555;
+  color: white;
+  transition: all 0.3s ease;
+  margin: 10px;
+  cursor: pointer;
+}
+.animated-button:after {
+  position: absolute;
+  top: 50%;
+  right: 0.6em;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  content: "»";
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.animated-button:hover {
+  padding: 10px 45px 10px 15px;
+  box-shadow: 0px 12px 10px 0px rgba(3, 3, 3, 0.3);
+}
+.animated-button:hover:after {
+  right: 1.2em;
+  opacity: 1;
+}
+
+
+/* =========================
+   MEDIA QUERIES 500px
+   ========================= */
+
+@media screen and (max-width: 500px) {
+  .animated-button {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+
+/* =========================
+   MEDIA QUERIES 350px
+   ========================= */
+
+   @media screen and (max-width: 350px) {
+    .animated-button {
+      font-size: .6rem;
+      max-width: 80%;
+    }
+  }
+  
