@@ -22,12 +22,12 @@ const BackToTop = () => {
   }, []);
 
   //   function to scroll up
-  function toTop() {
+  const toTop = () => {
     window.scrollTo({
       top: 0,
       left: 0,
     });
-  }
+  };
 
   return (
     <>
