@@ -1,16 +1,16 @@
 import React from "react";
 
 // Component import
-import Banner from "./Banner";
-import Products from "./Products";
-import BackToTop from "./BackToTop";
-import Newsletter from "./Newsletter";
+import Banner from "../components/Banner";
+import Products from "../pages/Products";
+import BackToTop from "../components/BackToTop";
+import Newsletter from "../components/Newsletter";
 // Image import
 import value from "../img/meal-1.jpg";
 // styles import
 import "../css/home.css";
 
-const Home = ({items}) => {
+const Home = ({ items }) => {
   return (
     <>
       <Banner text={"Explore"} />

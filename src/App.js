@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Component import
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Error from "./components/Error";
-import Home from "./components/Home";
-import Wrapper from "./components/Wrapper";
-import Product from "./components/Product";
-import Products from "./components/Products";
-import ProductsPage from "./components/ProductsPage";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Error from "./pages/Error";
+import Home from "./pages/Home";
+import Wrapper from "./pages/Wrapper";
+import Product from "./pages/Product";
+import Products from "./pages/Products";
+import ProductsPage from "./pages/ProductsPage";
 
 // CSS import
 import "./App.css";

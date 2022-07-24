@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./Button";
-import Stats from "./Stats";
-import Team from "./Team";
+import Button from "../components/Button";
+import Stats from "../components/Stats";
+import Team from "../components/Team";
 
 import "../css/about.css";
 import meal5 from "../img/meal-5.jpg";

@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Button from "./Button";
-import AnimatedButton from "./AnimatedButton";
-import ThreeDText from "./ThreeDText";
+import Button from "../components/Button";
+import AnimatedButton from "../components/AnimatedButton";
+import ThreeDText from "../components/ThreeDText";
 
 import "../css/product.css";
 
